@@ -1,0 +1,154 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.25 Arial, serif;
+  position: relative;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1135px;
+}
+
+.header-contact {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tel {
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tel::before {
+  content: "";
+  background-image: url("/img/svg/phone.svg");
+  background-size: cover;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.bg-layer {
+  background-image: url("/img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.bg-layer .promnt-txt {
+  color: #fff;
+  max-width: 300px;
+  font-size: 40px;
+  line-height: 45px;
+  position: absolute;
+  top: 100px;
+  left: 228px;
+}
+
+.hero-block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.about-item {
+  gap: 100px;
+}
+
+.img-part {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-part .img-prev {
+  max-width: 400px;
+  display: block;
+  height: auto;
+}
+
+.info-txt {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.info-txt .custom-line {
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+}
+.info-txt h2 {
+  font-weight: 700;
+  line-height: 34px;
+  max-width: 350px;
+}
+
+.bg-next-layer {
+  background-image: url("/img/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.bg-next-layer .promnt-next-txt {
+  color: #fff;
+  max-width: 800px;
+  font-size: 40px;
+  line-height: 45px;
+  position: absolute;
+  top: 100px;
+  left: 430px;
+  text-align: center;
+}/*# sourceMappingURL=all.css.map */
