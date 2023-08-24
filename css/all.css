@@ -28,7 +28,6 @@ body {
 }
 @media screen and (max-width: 425px) {
   .wrapper {
-    position: absolute;
     width: 100%;
     overflow-x: hidden;
   }
@@ -104,7 +103,7 @@ a {
 }
 
 .bg-layer {
-  background-image: url("/img/bg1.png");
+  background-image: url("../img/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -327,7 +326,7 @@ a {
   }
 }
 .bg-next-layer {
-  background-image: url("/img/bg2.png");
+  background-image: url("../img/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -631,8 +630,15 @@ address::before {
     font-size: small;
   }
 }
+.footer-info2 {
+  display: none;
+}
+
 @media screen and (max-width: 320px) {
   .footer-info2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
